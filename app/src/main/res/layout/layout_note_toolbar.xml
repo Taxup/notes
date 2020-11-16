@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorPrimary"
+              android:weightSum="100">
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:id="@+id/toolbar_arrow_back_container"
+            android:visibility="visible">
+
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:id="@+id/toolbar_arrow_back"
+                android:background="?attr/selectableItemBackground"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:id="@+id/toolbar_check_container"
+            android:visibility="gone">
+
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_check_24"
+                android:id="@+id/toolbar_check"
+                android:background="?attr/selectableItemBackground"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="85"
+            android:visibility="visible"
+            android:id="@+id/toolbar_text_title"
+            android:textColor="#000000"
+            android:text="title"
+            android:layout_marginStart="15dp"
+            android:padding="2dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="85"
+            android:visibility="gone"
+            android:id="@+id/toolbar_edit_title"
+            android:textColor="#000000"
+            android:background="@color/colorMoreAccent"
+            android:text="title"
+            android:layout_marginStart="15dp"
+            android:padding="2dp"/>
+
+
+</LinearLayout>
